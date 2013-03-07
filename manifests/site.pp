@@ -72,6 +72,12 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
+  include spotify
+  include gitx
+  include sparrow
+  include macvim
+  include chrome
+
   # common, useful packages
   package {
     [
