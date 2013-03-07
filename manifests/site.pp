@@ -77,6 +77,10 @@ node default {
   include sparrow
   include macvim
   include chrome
+  include skype
+  include iterm2::dev
+  include sublime_text_2
+  include zsh 
 
   # common, useful packages
   package {
