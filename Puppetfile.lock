@@ -4,6 +4,11 @@ GITHUBTARBALL
     alfred (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-augeas
+  specs:
+    augeas (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (1.2.0)
@@ -144,6 +149,11 @@ GITHUBTARBALL
     things (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
@@ -154,18 +164,25 @@ GITHUBTARBALL
     inifile (0.9.0)
 
 GITHUBTARBALL
+  remote: dieterdemeyer/puppet-firefox
+  specs:
+    firefox (0.0.4)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (3.0.0)
 
 DEPENDENCIES
   alfred (= 1.0.1)
+  augeas (= 1.0.0)
   boxen (= 1.2.0)
   caffeine (= 1.0.0)
   chrome (= 1.1.0)
   colloquy (= 1.0.0)
   cord (= 1.0.0)
   dnsmasq (= 1.0.0)
+  firefox (= 0.0.4)
   gcc (= 1.0.0)
   git (= 1.0.0)
   gitx (= 1.1.0)
@@ -190,5 +207,6 @@ DEPENDENCIES
   sudo (= 1.0.0)
   textmate (= 1.1.0)
   things (= 1.0.0)
+  wget (= 1.0.0)
   zsh (= 1.0.0)
 

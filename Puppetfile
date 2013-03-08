@@ -33,23 +33,30 @@ github "sudo",     "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+ 
 github "chrome",   "1.1.0"
+github "firefox", "0.0.4", :repo => "dieterdemeyer/puppet-firefox"
+
 github "java",     "1.0.6"
-github "textmate", "1.1.0"
+
 github "iterm2", "1.0.1"
+github "screen", "1.0.0"
+github "macvim",  "1.0.0"
+github "augeas", "1.0.0"
+github "wget", "1.0.0"
+
+github "textmate", "1.1.0"
+github "sublime_text_2",  "1.0.0"
 github "cord",  "1.0.0"
 github "alfred", "1.0.1"
 github "gitx", "1.1.0"
 #github "droplr",  "1.0.0"
 github "zsh", "1.0.0"
 github "things",  "1.0.0"
-github "sublime_text_2",  "1.0.0"
 github "spotify", "1.0.0"
 github "sparrow", "1.0.0"
 github "skype", "1.0.0"
-github "screen",  "1.0.0"
 github "osx", "1.0.0"
 github "onepassword", "1.0.0"
 github "colloquy",  "1.0.0"
 github "caffeine",  "1.0.0"
-github "macvim",  "1.0.0"

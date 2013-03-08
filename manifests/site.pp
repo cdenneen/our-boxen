@@ -73,7 +73,7 @@ node default {
   include ruby::2_0_0
 
   include spotify
-  include gitx
+  include gitx::l
   include sparrow
   include macvim
   include chrome
