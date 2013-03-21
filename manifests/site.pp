@@ -72,15 +72,15 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
-  include spotify
-  include gitx::l
-  include sparrow
-  include macvim
-  include chrome
-  include skype
-  include iterm2::dev
-  include sublime_text_2
-  include zsh 
+#  include spotify
+#  include gitx::l
+#  include sparrow
+#  include macvim
+#  include chrome
+#  include skype
+#  include iterm2::dev
+#  include sublime_text_2
+#  include zsh 
 
   # common, useful packages
   package {
