@@ -8,4 +8,6 @@ class people::cdenneen::applications {
   include iterm2::dev
   include sublime_text_2
   include zsh
+  include vagrant
+  include cyberduck
 }
