@@ -16,6 +16,15 @@ class people::cdenneen {
       notify  => Service['dev.nginx'],
     }
   }
+
+  boxen::osx_defaults { 'Shrink Dock':
+      ensure  => present,
+      domain  => 'com.apple.dock',
+      key     => 'tilesize',
+      type    => 'integer',
+      value   => 24,
+      user    => $::luser
+  }
 #  git::repo{'vpp':
 #      path    =>  "${home}/Sandbox/dne",
 #      source  => 'git://git@apdnp.beanstalkapp.com:/vpp.git',
