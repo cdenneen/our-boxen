@@ -40,6 +40,11 @@ class people::cdenneen {
       type    => 'array-add',
       value   => "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Utilities</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>Applications</string><key>file-type</key><integer>18</integer></dict><key>tile-type</key><string>directory-tile</string></dict>",
       user    => $::luser
+  } ~>
+
+  exec { 'Restart the Dock':
+      command => '/usr/bin/killall -HUP Dock',
+      refreshonly => true,
   }
 #  git::repo{'vpp':
 #      path    =>  "${home}/Sandbox/dne",
