@@ -25,6 +25,14 @@ class people::cdenneen {
       value   => 24,
       user    => $::luser
   }
+  boxen::osx_defaults { 'Add Home to Dock':
+      ensure  => present,
+      domain  => 'com.apple.dock',
+      key     => 'persistent-others',
+      type    => 'array-add',
+      value   => "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Users/`whoami`</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>My Home</string><key>file-type</key><integer>18</integer></dict><key>tile-type</key><string>directory-tile</string></dict>",
+      user    => $::luser
+  }
   boxen::osx_defaults { 'Add Applications to Dock':
       ensure  => present,
       domain  => 'com.apple.dock',
