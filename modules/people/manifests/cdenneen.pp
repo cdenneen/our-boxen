@@ -27,27 +27,27 @@ class people::cdenneen {
   }
 
   include dockutil
-  dockutil { '/Users/chris':
+  dockutil::item { '/Users/chris':
       label   => "Home",
       action  => "add",
       position => "unset",
   }
-  dockutil { '/Users/chris/Documents':
+  dockutil::item { '/Users/chris/Documents':
       label   => "Documents",
       action  => "add",
       position => "unset",
   }
-  dockutil { '/Users/chris/Downloads':
+  dockutil::item { '/Users/chris/Downloads':
       label   => "Downloads",
       action  => "add",
       position => "3",
   }
-  dockutil { '/Applications':
+  dockutil::item { '/Applications':
       label   => "Applications",
       action  => "add",
       position => "4",
   }
-  dockutil { '/Applications/Utilities':
+  dockutil::item { '/Applications/Utilities':
       label   => "Utilities",
       action  => "add",
       position => "5",
