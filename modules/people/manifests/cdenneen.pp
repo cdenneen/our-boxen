@@ -26,6 +26,7 @@ class people::cdenneen {
       user    => $::luser
   }
 
+  include dockutil
   dockutil { '/Users/chris':
       label   => "Home",
       action  => "add",
