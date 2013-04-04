@@ -25,35 +25,61 @@ class people::cdenneen {
       value   => 24,
       user    => $::luser
   }
-  boxen::osx_defaults { 'Add Home to Dock':
-      ensure  => present,
-      domain  => 'com.apple.dock',
-      key     => 'persistent-others',
-      type    => 'array-add',
-      value   => "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Users/chris</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>My Home</string><key>file-type</key><integer>18</integer></dict><key>tile-type</key><string>directory-tile</string></dict>",
-      user    => $::luser
-  }
-  boxen::osx_defaults { 'Add Applications to Dock':
-      ensure  => present,
-      domain  => 'com.apple.dock',
-      key     => 'persistent-others',
-      type    => 'array-add',
-      value   => "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>Applications</string><key>file-type</key><integer>18</integer></dict><key>tile-type</key><string>directory-tile</string></dict>",
-      user    => $::luser
-  }
-  boxen::osx_defaults { 'Add Utilities to Dock':
-      ensure  => present,
-      domain  => 'com.apple.dock',
-      key     => 'persistent-others',
-      type    => 'array-add',
-      value   => "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Utilities</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>Utilities</string><key>file-type</key><integer>18</integer></dict><key>tile-type</key><string>directory-tile</string></dict>",
-      user    => $::luser
-  } ~>
 
-  exec { 'Restart the Dock':
-      command => '/usr/bin/killall -HUP Dock',
-      refreshonly => true,
+  dockutil { '/Users/chris':
+      label   => "Home",
+      action  => "add",
+      position => "unset",
   }
+  dockutil { '/Users/chris/Documents':
+      label   => "Documents",
+      action  => "add",
+      position => "unset",
+  }
+  dockutil { '/Users/chris/Downloads':
+      label   => "Downloads",
+      action  => "add",
+      position => "3",
+  }
+  dockutil { '/Applications':
+      label   => "Applications",
+      action  => "add",
+      position => "4",
+  }
+  dockutil { '/Applications/Utilities':
+      label   => "Utilities",
+      action  => "add",
+      position => "5",
+  }
+#  boxen::osx_defaults { 'Add Home to Dock':
+#      ensure  => present,
+#      domain  => 'com.apple.dock',
+#      key     => 'persistent-others',
+#      type    => 'array-add',
+#      value   => "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Users/chris</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>My Home</string><key>file-type</key><integer>18</integer></dict><key>tile-type</key><string>directory-tile</string></dict>",
+#      user    => $::luser
+#  }
+#  boxen::osx_defaults { 'Add Applications to Dock':
+#      ensure  => present,
+#      domain  => 'com.apple.dock',
+#      key     => 'persistent-others',
+#      type    => 'array-add',
+#      value   => "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>Applications</string><key>file-type</key><integer>18</integer></dict><key>tile-type</key><string>directory-tile</string></dict>",
+#      user    => $::luser
+#  }
+#  boxen::osx_defaults { 'Add Utilities to Dock':
+#      ensure  => present,
+#      domain  => 'com.apple.dock',
+#      key     => 'persistent-others',
+#      type    => 'array-add',
+#      value   => "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Utilities</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>Utilities</string><key>file-type</key><integer>18</integer></dict><key>tile-type</key><string>directory-tile</string></dict>",
+#      user    => $::luser
+#  } ~>
+#
+#  exec { 'Restart the Dock':
+#      command => '/usr/bin/killall -HUP Dock',
+#      refreshonly => true,
+#  }
 #  git::repo{'vpp':
 #      path    =>  "${home}/Sandbox/dne",
 #      source  => 'git://git@apdnp.beanstalkapp.com:/vpp.git',

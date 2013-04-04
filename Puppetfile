@@ -62,3 +62,6 @@ github "colloquy",  "1.0.0"
 github "caffeine",  "1.0.0"
 github "vagrant", "2.0.2"
 github "cyberduck", "1.0.3", :repo => "cdenneen/puppet-cyberduck"
+
+#github "property_list_key", "0.1.0", :repo => "glarizza/puppet-property_list_key"
+github "dockutil", "0.1.0", :repo => "grahamgilbert/puppet-dockutil"
