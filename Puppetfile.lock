@@ -179,6 +179,11 @@ GITHUBTARBALL
     firefox (0.0.4)
 
 GITHUBTARBALL
+  remote: grahamgilbert/puppet-dockutil
+  specs:
+    dockutil (0.1.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (3.0.0)
@@ -193,6 +198,7 @@ DEPENDENCIES
   cord (= 1.0.0)
   cyberduck (= 1.0.3)
   dnsmasq (= 1.0.0)
+  dockutil (= 0.1.0)
   firefox (= 0.0.4)
   gcc (= 1.0.0)
   git (= 1.0.0)
