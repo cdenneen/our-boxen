@@ -3,20 +3,38 @@ class people::cdenneen::config (
   	$my_sourcedir = $::people::cdenneen::params::my_sourcedir,
   	$my_username  = $::people::cdenneen::params::my_username
 	){	
-		# Put the default ruby back to 1.8.7
-		
-		#class { 'ruby::global': version => '1.9.3' }
-		
-		osx_chsh { $::luser:
-			shell   => '/opt/boxen/homebrew/bin/zsh',
-			require => Package['zsh'],
-		}
-		
-		file_line { 'add zsh to /etc/shells':
-			path    => '/etc/shells',
-			line    => "${boxen::config::homebrewdir}/bin/zsh",
-			require => Package['zsh'],
-		}
+	
+  ###################
+  # Config Settings #
+  ###################
+
+	property_list_key { 'Disable Autocorrect':
+    	ensure     => present,
+    	path       => "${my_homedir}/Library/Preferences/.GlobalPreferences.plist",
+    	key        => 'NSAutomaticSpellingCorrectionEnabled',
+    	value      => false,
+    	value_type => 'boolean',
+	}
+
+	file { '.GlobalPreferences Plist':
+    	ensure  => file,
+    	require => Property_list_key['Disable Autocorrect'],
+    	path    => "${my_homedir}/Library/Preferences/.GlobalPreferences.plist",
+    	mode    => '0600',
+	}
+
+# Already declared in zsh module
+#	osx_chsh { $::luser:
+#		shell   => '/opt/boxen/homebrew/bin/zsh',
+#		require => Package['zsh'],
+#	}
+
+# Already declared in zsh module		
+#	file_line { 'add zsh to /etc/shells':
+#		path    => '/etc/shells',
+#		line    => "${boxen::config::homebrewdir}/bin/zsh",
+#		require => Package['zsh'],
+#	}
 		
 	#	if !defined(File["${my_sourcedir}/Mine"]){
 	#		file {"${my_sourcedir}/Mine":
@@ -36,9 +54,6 @@ class people::cdenneen::config (
 	#	}
 		
 
-		git::config::global { 'user.email':
-			value  => 'cdenneen@gmail.com'
-		}
 		
 		Boxen::Osx_defaults {
 		  user => $::luser,
@@ -63,7 +78,23 @@ class people::cdenneen::config (
 			#type	=> 'BOOL',
 			value	=> 'YES',
 		}
+
+	boxen::osx_defaults { 'Shrink Dock':
+      ensure  => present,
+      domain  => 'com.apple.dock',
+      key     => 'tilesize',
+      type    => 'integer',
+      value   => 24,
+      user    => $::luser
+  	}
 		
+	property_list_key { 'Disable Gatekeeper':
+    	ensure => present,
+    	path   => '/var/db/SystemPolicy-prefs.plist',
+    	key    => 'enabled',
+    	value  => 'no',
+	}
+
 	#	boxen::osx_defaults { 'Make Go2Shell Use iTerm':
 	#		domain	=> 'com.alice.mac.go2shell',
 	#		key		=> 'usingTerminal',
@@ -91,5 +122,37 @@ class people::cdenneen::config (
 		#	key		=> 'appBartenderOrder',
 		#	value	=> ['Notification Center', ],
 		#}
-		
+	
+  include dockutil
+  dockutil::item { '/Users/chris':
+      item    => "/Users/chris",
+      label   => "Home",
+      action  => "add",
+      position => "unset",
+  }
+  dockutil::item { '/Users/chris/Documents':
+      item    => "/Users/chris/Documents",
+      label   => "Documents",
+      action  => "add",
+      position => "unset",
+  }
+  dockutil::item { '/Users/chris/Downloads':
+      item    => "/Users/chris/Downloads",
+      label   => "Downloads",
+      action  => "add",
+      position => "3",
+  }
+  dockutil::item { '/Applications':
+      item    => "/Applications",
+      label   => "Applications",
+      action  => "add",
+      position => "4",
+  }
+  dockutil::item { '/Applications/Utilities':
+      item    => "/Applications/Utilities",
+      label   => "Utilities",
+      action  => "add",
+      position => "5",
+  }
+
 }

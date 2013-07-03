@@ -24,6 +24,11 @@ GITHUBTARBALL
     chrome (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-clipmenu
+  specs:
+    clipmenu (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-colloquy
   specs:
     colloquy (1.0.0)
@@ -52,6 +57,11 @@ GITHUBTARBALL
   remote: boxen/puppet-gitx
   specs:
     gitx (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-googledrive
+  specs:
+    googledrive (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
@@ -109,9 +119,24 @@ GITHUBTARBALL
     screen (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sequel_pro
+  specs:
+    sequel_pro (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sizeup
+  specs:
+    sizeup (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
     skype (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-sourcetree
+  specs:
+    sourcetree (0.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-sparrow
@@ -144,6 +169,11 @@ GITHUBTARBALL
     things (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-tunnelblick
+  specs:
+    tunnelblick (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (2.0.2)
@@ -164,6 +194,16 @@ GITHUBTARBALL
     cyberduck (1.0.3)
 
 GITHUBTARBALL
+  remote: cdenneen/puppet-dropbox
+  specs:
+    dropbox (1.1.2)
+
+GITHUBTARBALL
+  remote: cdenneen/puppet-evernote
+  specs:
+    evernote (1.0.1)
+
+GITHUBTARBALL
   remote: cdenneen/puppet-iterm2
   specs:
     iterm2 (1.0.3)
@@ -177,6 +217,11 @@ GITHUBTARBALL
   remote: dieterdemeyer/puppet-firefox
   specs:
     firefox (0.0.4)
+
+GITHUBTARBALL
+  remote: glarizza/puppet-property_list_key
+  specs:
+    property_list_key (0.1.0)
 
 GITHUBTARBALL
   remote: grahamgilbert/puppet-dockutil
@@ -194,15 +239,19 @@ DEPENDENCIES
   boxen (= 1.2.0)
   caffeine (= 1.0.0)
   chrome (= 1.1.0)
+  clipmenu (= 1.0.0)
   colloquy (= 1.0.0)
   cord (= 1.0.0)
   cyberduck (= 1.0.3)
   dnsmasq (= 1.0.0)
   dockutil (= 0.1.0)
+  dropbox (= 1.1.2)
+  evernote (= 1.0.1)
   firefox (= 0.0.4)
   gcc (= 1.0.0)
   git (= 1.0.0)
   gitx (= 1.1.0)
+  googledrive (= 1.0.1)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
   inifile (= 0.9.0)
@@ -214,9 +263,13 @@ DEPENDENCIES
   nvm (= 1.0.0)
   onepassword (= 1.0.0)
   osx (= 1.0.0)
+  property_list_key (= 0.1.0)
   ruby (= 3.1.0)
   screen (= 1.0.0)
+  sequel_pro (= 1.0.0)
+  sizeup (= 1.0.0)
   skype (= 1.0.0)
+  sourcetree (= 0.0.2)
   sparrow (= 1.0.0)
   spotify (= 1.0.0)
   stdlib (= 3.0.0)
@@ -224,6 +277,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   textmate (= 1.1.0)
   things (= 1.0.0)
+  tunnelblick (= 1.0.0)
   vagrant (= 2.0.2)
   wget (= 1.0.0)
   zsh (= 1.0.0)
