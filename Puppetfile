@@ -73,3 +73,8 @@ github "property_list_key", "0.1.0", :repo => "glarizza/puppet-property_list_key
 github "dockutil", "0.1.0", :repo => "grahamgilbert/puppet-dockutil"
 github "tunnelblick", "1.0.0"
 github "evernote", "1.0.1", :repo => "cdenneen/puppet-evernote"
+github "jumpcut", "1.0.0"
+github "onyx", "1.0.1", :repo => "dieterdemeyer/puppet-onyx"
+github "adium", "1.1.1", :repo => "dieterdemeyer/puppet-adium"
+github "unarchiver", "1.1.0", :repo => "dieterdemeyer/puppet-unarchiver"
+

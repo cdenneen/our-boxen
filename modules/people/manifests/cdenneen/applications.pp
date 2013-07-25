@@ -20,6 +20,10 @@ class people::cdenneen::applications {
   include googledrive
   include sourcetree
   include evernote
+  include jumpcut
+  include adium
+  include onyx
+  include unarchiver
 
 # To be added
 #  include 1password
