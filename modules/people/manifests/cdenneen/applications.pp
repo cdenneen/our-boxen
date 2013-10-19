@@ -24,6 +24,8 @@ class people::cdenneen::applications {
   include adium
   include onyx
   include unarchiver
+  include shortcat
+  include lync
 
 # To be added
 #  include 1password

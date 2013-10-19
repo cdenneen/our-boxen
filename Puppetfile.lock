@@ -1,18 +1,17 @@
 GITHUBTARBALL
-<<<<<<< HEAD
   remote: boxen/puppet-alfred
   specs:
-    alfred (1.0.1)
+    alfred (1.1.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-augeas
   specs:
-    augeas (1.0.0)
-=======
+    augeas (1.2.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-autoconf
   specs:
     autoconf (1.0.0)
->>>>>>> upstream/master
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
@@ -67,7 +66,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-googledrive
   specs:
-    googledrive (1.0.1)
+    googledrive (1.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
@@ -85,6 +84,11 @@ GITHUBTARBALL
     java (1.0.6)
 
 GITHUBTARBALL
+  remote: boxen/puppet-jumpcut
+  specs:
+    jumpcut (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -100,24 +104,24 @@ GITHUBTARBALL
     nodejs (3.2.8)
 
 GITHUBTARBALL
-  remote: boxen/puppet-openssl
-  specs:
-    openssl (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-repository
-  specs:
-    repository (2.2.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-onepassword
   specs:
     onepassword (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-openssl
+  specs:
+    openssl (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (1.0.0)
+    osx (1.5.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-repository
+  specs:
+    repository (2.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-ruby
@@ -133,6 +137,11 @@ GITHUBTARBALL
   remote: boxen/puppet-sequel_pro
   specs:
     sequel_pro (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-shortcat
+  specs:
+    shortcat (1.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-sizeup
@@ -157,7 +166,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-spotify
   specs:
-    spotify (1.0.0)
+    spotify (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-sublime_text_2
@@ -170,7 +179,6 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
-<<<<<<< HEAD
   remote: boxen/puppet-textmate
   specs:
     textmate (1.1.0)
@@ -194,6 +202,11 @@ GITHUBTARBALL
   remote: boxen/puppet-wget
   specs:
     wget (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-xquartz
+  specs:
+    xquartz (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-zsh
@@ -221,22 +234,29 @@ GITHUBTARBALL
     iterm2 (1.0.3)
 
 GITHUBTARBALL
-  remote: cprice-puppet/puppetlabs-inifile
-=======
-  remote: boxen/puppet-xquartz
+  remote: dieterdemeyer/puppet-adium
   specs:
-    xquartz (1.1.0)
-
-GITHUBTARBALL
-  remote: puppetlabs/puppetlabs-inifile
->>>>>>> upstream/master
-  specs:
-    inifile (1.0.0)
+    adium (1.1.1)
 
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-firefox
   specs:
     firefox (0.0.4)
+
+GITHUBTARBALL
+  remote: dieterdemeyer/puppet-lync
+  specs:
+    lync (1.2.0)
+
+GITHUBTARBALL
+  remote: dieterdemeyer/puppet-onyx
+  specs:
+    onyx (1.0.1)
+
+GITHUBTARBALL
+  remote: dieterdemeyer/puppet-unarchiver
+  specs:
+    unarchiver (1.1.0)
 
 GITHUBTARBALL
   remote: glarizza/puppet-property_list_key
@@ -249,15 +269,21 @@ GITHUBTARBALL
     dockutil (0.1.0)
 
 GITHUBTARBALL
+  remote: puppetlabs/puppetlabs-inifile
+  specs:
+    inifile (1.0.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.1.0)
 
 DEPENDENCIES
-<<<<<<< HEAD
-  alfred (= 1.0.1)
-  augeas (= 1.0.0)
-  boxen (= 1.2.0)
+  adium (= 1.1.1)
+  alfred (= 1.1.2)
+  augeas (= 1.2.2)
+  autoconf (= 1.0.0)
+  boxen (= 3.0.1)
   caffeine (= 1.0.0)
   chrome (= 1.1.0)
   clipmenu (= 1.0.0)
@@ -269,55 +295,44 @@ DEPENDENCIES
   dropbox (= 1.1.2)
   evernote (= 1.0.1)
   firefox (= 0.0.4)
-  gcc (= 1.0.0)
-  git (= 1.0.0)
+  gcc (= 2.0.1)
+  git (= 1.2.5)
   gitx (= 1.1.0)
-  googledrive (= 1.0.1)
-  homebrew (= 1.1.2)
-  hub (= 1.0.0)
-  inifile (= 0.9.0)
+  googledrive (= 1.0.2)
+  homebrew (= 1.4.1)
+  hub (= 1.0.3)
+  inifile (= 1.0.0)
   iterm2 (= 1.0.3)
   java (= 1.0.6)
+  jumpcut (= 1.0.0)
+  lync (= 1.2.0)
   macvim (= 1.0.0)
-  nginx (= 1.1.0)
-  nodejs (= 1.0.0)
-  nvm (= 1.0.0)
+  nginx (= 1.4.2)
+  nodejs (= 3.2.8)
   onepassword (= 1.0.0)
-  osx (= 1.0.0)
+  onyx (= 1.0.1)
+  openssl (= 1.0.0)
+  osx (= 1.5.0)
   property_list_key (= 0.1.0)
-  ruby (= 3.1.0)
+  repository (= 2.2.0)
+  ruby (= 6.2.0)
   screen (= 1.0.0)
   sequel_pro (= 1.0.0)
+  shortcat (= 1.0.5)
   sizeup (= 1.0.0)
   skype (= 1.0.0)
   sourcetree (= 0.0.2)
   sparrow (= 1.0.0)
-  spotify (= 1.0.0)
-  stdlib (= 3.0.0)
+  spotify (= 1.0.1)
+  stdlib (= 4.1.0)
   sublime_text_2 (= 1.0.0)
   sudo (= 1.0.0)
   textmate (= 1.1.0)
   things (= 1.0.0)
   tunnelblick (= 1.0.0)
+  unarchiver (= 1.1.0)
   vagrant (= 2.0.2)
   wget (= 1.0.0)
-  zsh (= 1.0.0)
-=======
-  autoconf (= 1.0.0)
-  boxen (= 3.0.1)
-  dnsmasq (= 1.0.0)
-  gcc (= 2.0.1)
-  git (= 1.2.5)
-  homebrew (= 1.4.1)
-  hub (= 1.0.3)
-  inifile (= 1.0.0)
-  nginx (= 1.4.2)
-  nodejs (= 3.2.8)
-  openssl (= 1.0.0)
-  repository (= 2.2.0)
-  ruby (= 6.2.0)
-  stdlib (= 4.1.0)
-  sudo (= 1.0.0)
   xquartz (= 1.1.0)
->>>>>>> upstream/master
+  zsh (= 1.0.0)
 
