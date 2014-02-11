@@ -51,7 +51,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-evernote
   specs:
-    evernote (2.0.4)
+    evernote (2.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -307,7 +307,7 @@ DEPENDENCIES
   dnsmasq (= 1.0.1)
   dockutil (= 0.1.2)
   dropbox (= 1.2.0)
-  evernote (= 2.0.4)
+  evernote (= 2.0.5)
   firefox (= 0.0.4)
   foreman (= 1.0.0)
   gcc (= 2.0.1)

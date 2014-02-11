@@ -6,6 +6,8 @@ class people::cdenneen::applications {
   include chrome
   include skype
   include iterm2::dev
+  include iterm2::colors::solarized_light
+  include iterm2::colors::solarized_dark
   include sublime_text_2
   include zsh
   include vagrant
