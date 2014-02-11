@@ -101,5 +101,5 @@ github "adium", "1.3.0", :repo => "dieterdemeyer/puppet-adium"
 github "unarchiver", "1.3.0", :repo => "dieterdemeyer/puppet-unarchiver"
 github "shortcat", "1.0.6"
 github "lync", "1.3.0", :repo => "dieterdemeyer/puppet-lync"
-github "parallels", "1.0.1", :repo => "cdenneen/puppet-parallels"
+#github "parallels", "1.1.1", :repo => "cdenneen/puppet-parallels"
 
