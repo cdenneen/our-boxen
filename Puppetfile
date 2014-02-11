@@ -61,7 +61,7 @@ github "firefox", "0.0.4", :repo => "dieterdemeyer/puppet-firefox"
 
 github "java",     "1.2.0"
 
-github "iterm2", "1.0.6"
+github "iterm2", "1.0.7"
 github "screen", "1.0.0"
 github "macvim",  "1.0.0"
 github "augeas", "1.3.1"
@@ -101,4 +101,5 @@ github "adium", "1.3.0", :repo => "dieterdemeyer/puppet-adium"
 github "unarchiver", "1.3.0", :repo => "dieterdemeyer/puppet-unarchiver"
 github "shortcat", "1.0.6"
 github "lync", "1.3.0", :repo => "dieterdemeyer/puppet-lync"
+github "parallels", "1.0.1", :repo => "cdenneen/puppet-parallels"
 

@@ -1,4 +1,5 @@
 class people::cdenneen::applications {
+  include parallels
   include spotify
   include gitx::l
   include sparrow
