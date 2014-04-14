@@ -11,7 +11,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.3.4)
+    boxen (3.4.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -56,17 +56,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-foreman
   specs:
-    foreman (1.0.0)
+    foreman (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
-    gcc (2.0.1)
+    gcc (2.0.100)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (1.2.5)
+    git (2.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gitx
@@ -76,7 +76,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-go
   specs:
-    go (1.0.0)
+    go (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-googledrive
@@ -86,12 +86,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.5.1)
+    homebrew (1.6.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.0.3)
+    hub (1.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
@@ -116,12 +116,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.4.2)
+    nginx (1.4.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.3.0)
+    nodejs (3.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
@@ -141,7 +141,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
-    phantomjs (2.0.2)
+    phantomjs (2.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
@@ -151,12 +151,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
-    repository (2.2.0)
+    repository (2.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (6.7.2)
+    ruby (7.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-screen
@@ -241,17 +241,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
-    xquartz (1.1.0)
+    xquartz (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
-
-GITHUBTARBALL
-  remote: cdenneen/puppet-cyberduck
-  specs:
-    cyberduck (1.0.3)
 
 GITHUBTARBALL
   remote: dieterdemeyer/puppet-adium
@@ -291,54 +286,59 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
-    inifile (1.0.0)
+    inifile (1.0.3)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.1.0)
 
+GITHUBTARBALL
+  remote: ripienaar/puppet-module-data
+  specs:
+    module-data (0.0.3)
+
 DEPENDENCIES
   adium (= 1.3.0)
   alfred (= 1.1.7)
   augeas (= 1.3.1)
-  boxen (= 3.3.4)
+  boxen (= 3.4.2)
   caffeine (= 1.0.0)
   chrome (= 1.1.2)
   clipmenu (= 1.0.0)
   colloquy (= 1.0.0)
   cord (= 1.0.0)
-  cyberduck (= 1.0.3)
   dnsmasq (= 1.0.1)
   dockutil (= 0.1.2)
   dropbox (= 1.2.0)
   evernote (= 2.0.5)
   firefox (= 0.0.4)
-  foreman (= 1.0.0)
-  gcc (= 2.0.1)
-  git (= 1.2.5)
+  foreman (= 1.2.0)
+  gcc (= 2.0.100)
+  git (= 2.3.0)
   gitx (= 1.1.0)
-  go (= 1.0.0)
+  go (= 1.1.0)
   googledrive (= 1.0.2)
-  homebrew (= 1.5.1)
-  hub (= 1.0.3)
-  inifile (= 1.0.0)
+  homebrew (= 1.6.2)
+  hub (= 1.3.0)
+  inifile (= 1.0.3)
   iterm2 (= 1.0.7)
   java (= 1.2.0)
   jumpcut (= 1.0.0)
   lync (= 1.3.0)
   macvim (= 1.0.0)
-  nginx (= 1.4.2)
-  nodejs (= 3.3.0)
+  module-data (= 0.0.3)
+  nginx (= 1.4.3)
+  nodejs (= 3.7.0)
   onepassword (= 1.0.0)
   onyx (= 1.1.1)
   openssl (= 1.0.0)
   osx (= 2.2.2)
-  phantomjs (= 2.0.2)
+  phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   property_list_key (= 0.2.0)
-  repository (= 2.2.0)
-  ruby (= 6.7.2)
+  repository (= 2.3.0)
+  ruby (= 7.3.0)
   screen (= 1.0.0)
   sequel_pro (= 1.0.1)
   shortcat (= 1.0.6)
@@ -357,6 +357,6 @@ DEPENDENCIES
   vagrant (= 3.0.3)
   virtualbox (= 1.0.10)
   wget (= 1.0.0)
-  xquartz (= 1.1.0)
+  xquartz (= 1.1.1)
   zsh (= 1.0.0)
 
