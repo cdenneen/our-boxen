@@ -13,7 +13,7 @@ class people::cdenneen::applications {
   include sublime_text_2
   include zsh
   include vagrant
-  include cyberduck
+  #  include cyberduck
   include tunnelblick
   include caffeine
   include sizeup
