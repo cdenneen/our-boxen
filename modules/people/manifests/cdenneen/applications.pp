@@ -290,9 +290,9 @@ class people::cdenneen::applications {
 #    provider => compressed_app,
 #    }
 
-    #package { 'puppet-lint':
-    #    provider => 'gem',
-    #}
+  package { 'puppet-lint':
+    provider => 'gem',
+  }
 
 #  package { 'iStat Menus':
 #    source   => 'http://s3.amazonaws.com/bjango/files/istatmenus3/istatmenus3.27.zip',
@@ -334,22 +334,9 @@ class people::cdenneen::applications {
 #    provider => appdmg,
 #  }
 
-#  exec { "curl http://wl.dlservice.microsoft.com/download/1/A/5/1A5C4419-BF0B-42BB-BCAA-F79CFD26044A/SkyDrive.pkg -o /var/tmp/SkyDrive.pkg":
-#    creates => "/var/tmp/SkyDrive.pkg",
-#    unless  => "[ -d '/Applications/SkyDrive.app' ]"
-#  } ~>
-
-#  if ! defined (File.directory['/Application/SkyDrive.app']) {
-#    package { 'SkyDrive.app':
-#      ensure => 'present'
-#      source => '/var/tmp/SkyDrive.pkg',
-#      provider => 'apple',
-#    }
-#  }
-
-  package { 'SkyDrive':
-    source => 'http://wl.dlservice.microsoft.com/download/1/A/5/1A5C4419-BF0B-42BB-BCAA-F79CFD26044A/SkyDrive.pkg',
-    provider => pkgdmg,
+  package { 'solr36':
+    ensure   => present,
+    provider => 'homebrew',
   }
 
 
