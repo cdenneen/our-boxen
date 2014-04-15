@@ -65,7 +65,7 @@ github "firefox", "0.0.4", :repo => "dieterdemeyer/puppet-firefox"
 
 github "java",     "1.2.0"
 
-github "iterm2", "1.0.8"
+github "iterm2", "1.0.9"
 github "screen", "1.0.0"
 github "macvim",  "1.0.0"
 github "augeas", "1.3.1"
