@@ -54,6 +54,11 @@ GITHUBTARBALL
     evernote (2.0.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.2.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-foreman
   specs:
     foreman (1.2.0)
@@ -254,11 +259,6 @@ GITHUBTARBALL
     adium (1.3.0)
 
 GITHUBTARBALL
-  remote: dieterdemeyer/puppet-firefox
-  specs:
-    firefox (0.0.4)
-
-GITHUBTARBALL
   remote: dieterdemeyer/puppet-lync
   specs:
     lync (1.3.0)
@@ -312,7 +312,7 @@ DEPENDENCIES
   dockutil (= 0.1.2)
   dropbox (= 1.2.0)
   evernote (= 2.0.5)
-  firefox (= 0.0.4)
+  firefox (= 1.2.1)
   foreman (= 1.2.0)
   gcc (= 2.0.100)
   git (= 2.3.0)
