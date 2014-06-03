@@ -61,7 +61,8 @@ github "xquartz",     "1.1.1"
 # https://github.com/boxen.
  
 github "chrome",   "1.1.2"
-github "firefox", "0.0.4", :repo => "dieterdemeyer/puppet-firefox"
+#github "firefox", "0.0.4", :repo => "dieterdemeyer/puppet-firefox"
+github "firefox", "1.2.1"
 
 github "java",     "1.2.0"
 

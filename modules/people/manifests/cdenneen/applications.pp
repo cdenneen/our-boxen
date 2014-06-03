@@ -42,7 +42,7 @@ class people::cdenneen::applications {
 #  include dash / dash expander
 #  include dropbox
 #  include evernote
-#  include firefox
+  include firefox
 #  include freememory
 #  include googledrive
 #  include googleappenginelauncher
