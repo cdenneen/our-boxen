@@ -1,35 +1,80 @@
 class people::cdenneen::applications {
-  include virtualbox
+  package { '1password': provider => 'brewcask' }
+  package { 'spotify': provider => 'brewcask' }
+  package { 'gitx': provider => 'brewcask' }
+  package { 'macvim': provider => 'brewcask' }
+  package { 'google-chrome': provider => 'brewcask' }
+  package { 'google-drive': provider => 'brewcask' }
+  package { 'google-hangouts': provider => 'brewcask' }
+  package { 'google-photos-backup': provider => 'brewcask' }
+  package { 'google-plus-auto-backup': provider => 'brewcask' }
+  package { 'heroku-toolbelt': provider => 'brewcask' }
+  package { 'hexchat': provider => 'brewcask' }
+  package { 'hipchat': provider => 'brewcask' }
+  package { 'adium': provider => 'brewcask' }
+  package { 'adobe-reader': provider => 'brewcask' }
+  package { 'adobe-air': provider => 'brewcask' }
+  package { 'amazon-cloud-drive': provider => 'brewcask' }
+  package { 'caffeine': provider => 'brewcask' }
+  package { 'clipmenu': provider => 'brewcask' }
+  package { 'colloquy': provider => 'brewcask' }
+  package { 'dropbox': provider => 'brewcask' }
+  package { 'dropbox-encore': provider => 'brewcask' }
+  package { 'eclipse-ide': provider => 'brewcask' }
+  package { 'evernote': provider => 'brewcask' }
+  package { 'filezilla': provider => 'brewcask' }
+  package { 'firefox': provider => 'brewcask' }
+  package { 'github': provider => 'brewcask' }
+  package { 'iterm2': provider => 'brewcask' }
+  package { 'sublime-text': provider => 'brewcask' }
+  package { 'vagrant': provider => 'brewcask' }
+  package { 'vagrant-manager': provider => 'brewcask' }
+  package { 'virtualbox': provider => 'brewcask' }
+  package { 'packer': provider => 'brewcask' }
+  package { 'vypervpn': provider => 'brewcask' }
+  package { 'sizeup': provider => 'brewcask' }
+  package { 'sequel-pro': provider => 'brewcask' }
+  package { 'sourcetree': provider => 'brewcask' }
+  package { 'onyx': provider => 'brewcask' }
+  package { 'microsoft-lync': provider => 'brewcask' }
+  package { 'microsoft-lync-plugin': provider => 'brewcask' }
+  package { 'microsoft-office': provider => 'brewcask' }
+  package { 'visual-studio-code': provider => 'brewcask' }
+  package { 'rubymine': provider => 'brewcask' }
+  package { 'skype': provider => 'brewcask' }
+  package { 'skype': provider => 'brewcask' }
+
+###  include virtualbox
   #include parallels
-  include spotify
-  include gitx::l
-  include sparrow
-  include macvim
-  include chrome
-  include skype
-  include iterm2::dev
-  include iterm2::colors::solarized_light
-  include iterm2::colors::solarized_dark
-  include sublime_text_2
-  include zsh
-  include vagrant
+###  include spotify
+###  include gitx::l
+#######  include sparrow
+###  include macvim
+###  include chrome
+###  include skype
+###  include iterm2::dev
+###  include iterm2::colors::solarized_light
+###  include iterm2::colors::solarized_dark
+###  include sublime_text_2
+#######  include zsh
+###  include vagrant
   #  include cyberduck
-  include tunnelblick
-  include caffeine
-  include sizeup
-  include sequel_pro
-  include dropbox
-  include onepassword
-  include clipmenu
-  include googledrive
-  include sourcetree
-  include evernote
-  include jumpcut
-  include adium
-  include onyx
-  include unarchiver
-  include shortcat
-  include lync
+#######  include tunnelblick
+###  include caffeine
+###  include sizeup
+###  include sequel_pro
+###  include dropbox
+###  include onepassword
+###  include clipmenu
+###  include googledrive
+###  include sourcetree
+###  include evernote
+#######  include jumpcut
+###  include adium
+###  include onyx
+#######  include unarchiver
+#######  include shortcat
+###  include lync
 
 # To be added
 #  include 1password
@@ -42,7 +87,7 @@ class people::cdenneen::applications {
 #  include dash / dash expander
 #  include dropbox
 #  include evernote
-  include firefox
+###  include firefox
 #  include freememory
 #  include googledrive
 #  include googleappenginelauncher
