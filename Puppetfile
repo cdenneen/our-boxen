@@ -98,7 +98,7 @@ github "xquartz",     "1.2.1"
 ####github "sourcetree", "1.0.0"
 ####
 github "property_list_key", "0.2.0", :repo => "glarizza/puppet-property_list_key"
-####github "dockutil", "0.1.2", :repo => "grahamgilbert/puppet-dockutil"
+github "dockutil", "0.1.2", :repo => "grahamgilbert/puppet-dockutil"
 ####github "tunnelblick", "1.0.4"
 ####github "evernote", "2.0.5"
 ####github "jumpcut", "1.0.0"
