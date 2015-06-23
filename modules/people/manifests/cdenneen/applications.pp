@@ -1,4 +1,5 @@
 class people::cdenneen::applications {
+  include brewcask
   package { '1password': provider => 'brewcask' }
   package { 'spotify': provider => 'brewcask' }
   package { 'gitx': provider => 'brewcask' }
