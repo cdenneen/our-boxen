@@ -32,7 +32,7 @@ class people::cdenneen::applications {
   package { 'vagrant-manager': provider => 'brewcask' }
   package { 'virtualbox': provider => 'brewcask' }
   package { 'packer': provider => 'brewcask' }
-  package { 'vypervpn': provider => 'brewcask' }
+  package { 'vyprvpn': provider => 'brewcask' }
   package { 'sizeup': provider => 'brewcask' }
   package { 'sequel-pro': provider => 'brewcask' }
   package { 'sourcetree': provider => 'brewcask' }
