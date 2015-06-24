@@ -36,7 +36,7 @@ class people::cdenneen::repositories (
   repository { "${my_sourcedir}/puppetmaster":
     source => 'git@gitolite:puppetmaster'
   }
-  repository { "${my_sourcedir}/interact":
-    source => 'git@ctcinteract-svn01.ap.org:devops.git'
-  }
+  #  repository { "${my_sourcedir}/interact":
+  #  source => 'git@ctcinteract-svn01.ap.org:devops.git'
+  #}
 }
