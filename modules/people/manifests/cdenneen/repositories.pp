@@ -16,7 +16,7 @@ class people::cdenneen::repositories (
     value => 'cdenneen@gmail.com'
   }
 
-  file { "${my_sourcedir}/dnp":
+  file { ["${my_sourcedir}/dnp","${my_sourcedir}/github", "${my_sourcedir}/gitlab"]:
     ensure => directory,
   } ->
 
@@ -27,7 +27,7 @@ class people::cdenneen::repositories (
   repository { "${my_sourcedir}/dnp/apress":
     source => 'apress@svn-777.prod.hosting.acquia.com:apress.git'
   }
-  repository { "${my_sourcedir}/deploy":
+  repository { "${my_sourcedir}/gitlab/deploy":
     source => 'git@gitolite:deploy.git'
   }
   repository { "${my_sourcedir}/gitolite-admin":
