@@ -43,6 +43,7 @@ class people::cdenneen::applications {
   package { 'visual-studio-code': provider => 'brewcask' }
   package { 'rubymine': provider => 'brewcask' }
   package { 'skype': provider => 'brewcask' }
+  package { 'slack': provider => 'brewcask' }
 
 ###  include virtualbox
   #include parallels
