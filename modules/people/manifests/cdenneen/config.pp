@@ -88,6 +88,15 @@ class people::cdenneen::config (
     user    => $::luser
   }
 
+  boxen::osx_defaults { 'Dock Left':
+    ensure  => present,
+    domain  => 'com.apple.dock',
+    key     => 'orientation',
+    type    => 'string',
+    value   => 'left',
+    user    => $::luser
+  }
+
   property_list_key { 'Disable Gatekeeper':
     ensure => present,
     path   => '/var/db/SystemPolicy-prefs.plist',
