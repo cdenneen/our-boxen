@@ -89,6 +89,16 @@ GITHUBTARBALL
     xquartz (1.2.1)
 
 GITHUBTARBALL
+  remote: glarizza/puppet-property_list_key
+  specs:
+    property_list_key (0.2.0)
+
+GITHUBTARBALL
+  remote: grahamgilbert/puppet-dockutil
+  specs:
+    dockutil (0.1.2)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.4.1)
@@ -107,6 +117,7 @@ DEPENDENCIES
   boxen (= 3.11.1)
   brewcask (= 0.0.7)
   dnsmasq (= 2.0.2)
+  dockutil (= 0.1.2)
   foreman (= 1.2.0)
   gcc (= 3.0.2)
   git (= 2.11.0)
@@ -120,6 +131,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
+  property_list_key (= 0.2.0)
   repository (= 2.4.1)
   ruby (= 8.5.4)
   stdlib (= 4.7.0)
