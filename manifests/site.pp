@@ -82,7 +82,7 @@ node default {
 #  include skype
 #  include iterm2::dev
 #  include sublime_text_2
-#  include zsh 
+#  include zsh
 
   # common, useful packages
   package {

@@ -16,26 +16,26 @@ class people::cdenneen::repositories (
     value => 'cdenneen@gmail.com'
   }
 
-  file { ["${my_sourcedir}/dnp","${my_sourcedir}/github", "${my_sourcedir}/gitlab"]:
-    ensure => directory,
-  } ->
-
-  repository { "${my_sourcedir}/dnp/vpp":
-    source => 'git@apdnp.beanstalkapp.com:/vpp.git'
-  } ->
-
-  repository { "${my_sourcedir}/dnp/apress":
-    source => 'apress@svn-777.prod.hosting.acquia.com:apress.git'
-  }
-  repository { "${my_sourcedir}/gitlab/deploy":
-    source => 'git@gitolite:deploy.git'
-  }
-  repository { "${my_sourcedir}/gitolite-admin":
-    source => 'git@gitolite:gitolite-admin'
-  }
-  repository { "${my_sourcedir}/puppetmaster":
-    source => 'git@gitolite:puppetmaster'
-  }
+#  file { ["${my_sourcedir}/dnp","${my_sourcedir}/github", "${my_sourcedir}/gitlab"]:
+#    ensure => directory,
+#  } ->
+#
+#  repository { "${my_sourcedir}/dnp/vpp":
+#    source => 'git@apdnp.beanstalkapp.com:/vpp.git'
+#  } ->
+#
+#  repository { "${my_sourcedir}/dnp/apress":
+#    source => 'apress@svn-777.prod.hosting.acquia.com:apress.git'
+#  }
+#  repository { "${my_sourcedir}/gitlab/deploy":
+#    source => 'git@gitolite:deploy.git'
+#  }
+#  repository { "${my_sourcedir}/gitolite-admin":
+#    source => 'git@gitolite:gitolite-admin'
+#  }
+#  repository { "${my_sourcedir}/puppetmaster":
+#    source => 'git@gitolite:puppetmaster'
+#  }
   #  repository { "${my_sourcedir}/interact":
   #  source => 'git@ctcinteract-svn01.ap.org:devops.git'
   #}
