@@ -1,7 +1,9 @@
 class people::cdenneen::applications {
   include brewcask
-  package { '1password': provider => 'brewcask' }
-  package { 'spotify': provider => 'brewcask' }
+  package { ['1password','spotify']:
+    provider        => 'brewcask',
+    install_options => ['--appdir=/Applications', '--force'],
+  }
   package { 'gitx': provider => 'brewcask' }
   package { 'macvim': provider => 'brewcask' }
   package { 'google-chrome': provider => 'brewcask' }
@@ -380,10 +382,10 @@ class people::cdenneen::applications {
 #    provider => appdmg,
 #  }
 
-  package { 'solr36':
-    ensure   => present,
-    provider => 'homebrew',
-  }
+#  package { 'solr36':
+  #    ensure   => present,
+  #  provider => 'homebrew',
+  #}
 
 
 }
