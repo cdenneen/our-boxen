@@ -2,7 +2,7 @@ class people::cdenneen::applications {
   include brewcask
   $cask_install = [
     '1password', 'spotify', 'google-chrome', 'google-drive', 'google-hangouts',
-    'google-photos-backup', 'amazon-cloud-drive', 'caffeine', 'colloquy', 'dropbox', 'dropbox-encore',
+    'google-photos-backup', 'amazon-drive', 'caffeine', 'colloquy', 'dropbox', 'dropbox-encore',
     'evernote', 'filezilla', 'firefox', 'github', 'iterm2',
     'vagrant', 'vagrant-manager', 'virtualbox', 'packer', 'vyprvpn', 'sizeup',
     'skype', 'skypewebplugin',
