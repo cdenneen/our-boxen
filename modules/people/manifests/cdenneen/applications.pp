@@ -4,7 +4,7 @@ class people::cdenneen::applications {
     '1password', 'spotify', 'google-chrome', 'google-drive', 'google-hangouts',
     'google-photos-backup', 'amazon-drive', 'caffeine', 'colloquy', 'dropbox', 'dropbox-encore',
     'evernote', 'filezilla', 'firefox', 'github', 'iterm2',
-    'vagrant', 'vagrant-manager', 'virtualbox', 'packer', 'vyprvpn', 'sizeup',
+    'vagrant', 'vagrant-manager', 'virtualbox', 'vyprvpn', 'sizeup',
     'skype', 'skypewebplugin',
     'slack',
     'visual-studio-code', 'atom', 'sublime-text', 'rubymine',
@@ -15,7 +15,7 @@ class people::cdenneen::applications {
     'eclipse-ide', 'sequel-pro', 'sourcetree', 'onyx', 'microsoft-lync-plugin', 'heroku-toolkit'
   ]
   $brew_install = [
-    'heroku', 'zsh'
+    'heroku', 'zsh', 'packer'
   ]
   $brew_remove = [
     'tree', 'htop-osx'
