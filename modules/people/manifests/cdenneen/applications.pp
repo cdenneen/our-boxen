@@ -5,9 +5,9 @@ class people::cdenneen::applications {
     'google-photos-backup', 'amazon-cloud-drive', 'caffeine', 'colloquy', 'dropbox', 'dropbox-encore',
     'evernote', 'filezilla', 'firefox', 'github', 'iterm2',
     'vagrant', 'vagrant-manager', 'virtualbox', 'packer', 'vyprvpn', 'sizeup',
-    'skype', 'skypewebplugin'
+    'skype', 'skypewebplugin',
     'slack',
-    'visual-studio-code', 'atom', 'sublime-text', 'rubymine'
+    'visual-studio-code', 'atom', 'sublime-text', 'rubymine',
     'microsoft-office', 'microsoft-lync', 'skype-for-business'
   ]
   $cask_remove = [
@@ -33,7 +33,7 @@ class people::cdenneen::applications {
     ensure   => latest,
     provider => 'homebrew',
   }
-  package { $brew_remove
+  package { $brew_remove:
     ensure   => absent,
     provider => 'homebrew',
   }
