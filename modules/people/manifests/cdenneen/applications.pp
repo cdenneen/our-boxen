@@ -21,7 +21,7 @@ class people::cdenneen::applications {
     'tree', 'htop-osx'
   ]
   package { $cask_install:
-    ensure          => latest,
+    ensure          => present,
     provider        => 'brewcask',
     install_options => ['--appdir=/Applications', '--force'],
   }
