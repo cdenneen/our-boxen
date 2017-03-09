@@ -1,83 +1,54 @@
 class people::cdenneen::applications {
   include brewcask
-  package { ['1password','spotify']:
+  $cask_install = [
+    '1password', 'spotify', 'google-chrome', 'google-drive', 'google-hangouts',
+    'google-photos-backup', 'amazon-cloud-drive', 'caffeine', 'colloquy', 'dropbox', 'dropbox-encore',
+    'evernote', 'filezilla', 'firefox', 'github', 'iterm2',
+    'vagrant', 'vagrant-manager', 'virtualbox', 'packer', 'vyprvpn', 'sizeup',
+    'skype', 'skypewebplugin'
+    'slack',
+    'visual-studio-code', 'atom', 'sublime-text', 'rubymine'
+    'microsoft-office', 'microsoft-lync', 'skype-for-business'
+  ]
+  $cask_remove = [
+    'gitx', 'macvim', 'google-plus-auto-backup', 'hexchat', 'hipchat', 'adium', 'adobe-reader', 'adobe-air', 'clipmenu',
+    'eclipse-ide', 'sequel-pro', 'sourcetree', 'onyx', 'microsoft-lync-plugin', 'heroku-toolkit'
+  ]
+  $brew_install = [
+    'heroku', 'zsh'
+  ]
+  $brew_remove = [
+    'tree', 'htop-osx'
+  ]
+  package { $cask_install:
+    ensure          => latest,
     provider        => 'brewcask',
     install_options => ['--appdir=/Applications', '--force'],
   }
-  package { 'gitx': provider => 'brewcask' }
-  package { 'macvim': provider => 'brewcask' }
-  package { 'google-chrome': provider => 'brewcask' }
-  package { 'google-drive': provider => 'brewcask' }
-  package { 'google-hangouts': provider => 'brewcask' }
-  package { 'google-photos-backup': provider => 'brewcask' }
-  package { 'google-plus-auto-backup': provider => 'brewcask' }
-  package { 'heroku-toolbelt': provider => 'brewcask' }
-  package { 'hexchat': provider => 'brewcask' }
-  package { 'hipchat': provider => 'brewcask' }
-  package { 'adium': provider => 'brewcask' }
-  package { 'adobe-reader': provider => 'brewcask' }
-  package { 'adobe-air': provider => 'brewcask' }
-  package { 'amazon-cloud-drive': provider => 'brewcask' }
-  package { 'caffeine': provider => 'brewcask' }
-  package { 'clipmenu': provider => 'brewcask' }
-  package { 'colloquy': provider => 'brewcask' }
-  package { 'dropbox': provider => 'brewcask' }
-  package { 'dropbox-encore': provider => 'brewcask' }
-  package { 'eclipse-ide': provider => 'brewcask' }
-  package { 'evernote': provider => 'brewcask' }
-  package { 'filezilla': provider => 'brewcask' }
-  package { 'firefox': provider => 'brewcask' }
-  package { 'github': provider => 'brewcask' }
-  package { 'iterm2': provider => 'brewcask' }
-  package { 'sublime-text': provider => 'brewcask' }
-  package { 'vagrant': provider => 'brewcask' }
-  package { 'vagrant-manager': provider => 'brewcask' }
-  package { 'virtualbox': provider => 'brewcask' }
-  package { 'packer': provider => 'brewcask' }
-  package { 'vyprvpn': provider => 'brewcask' }
-  package { 'sizeup': provider => 'brewcask' }
-  package { 'sequel-pro': provider => 'brewcask' }
-  package { 'sourcetree': provider => 'brewcask' }
-  package { 'onyx': provider => 'brewcask' }
-  package { 'microsoft-lync': provider => 'brewcask' }
-  package { 'microsoft-lync-plugin': provider => 'brewcask' }
-  package { 'microsoft-office': provider => 'brewcask' }
-  package { 'visual-studio-code': provider => 'brewcask' }
-  package { 'rubymine': provider => 'brewcask' }
-  package { 'skype': provider => 'brewcask' }
-  package { 'slack': provider => 'brewcask' }
-
-###  include virtualbox
-  #include parallels
-###  include spotify
-###  include gitx::l
-#######  include sparrow
+  package { $cask_remove:
+    ensure   => absent,
+    provider => 'brewcask',
+  }
+  package { $brew_install:
+    ensure   => latest,
+    provider => 'homebrew',
+  }
+  package { $brew_remove
+    ensure   => absent,
+    provider => 'homebrew',
+  }
+#include parallels
 ###  include macvim
-###  include chrome
-###  include skype
 ###  include iterm2::dev
 ###  include iterm2::colors::solarized_light
 ###  include iterm2::colors::solarized_dark
 ###  include sublime_text_2
-#######  include zsh
-###  include vagrant
   #  include cyberduck
 #######  include tunnelblick
-###  include caffeine
-###  include sizeup
-###  include sequel_pro
-###  include dropbox
-###  include onepassword
 ###  include clipmenu
-###  include googledrive
-###  include sourcetree
-###  include evernote
 #######  include jumpcut
-###  include adium
-###  include onyx
 #######  include unarchiver
 #######  include shortcat
-###  include lync
 
 # To be added
 #  include 1password
@@ -88,14 +59,8 @@ class people::cdenneen::applications {
 #  include cord
 #  include crashplan
 #  include dash / dash expander
-#  include dropbox
-#  include evernote
-###  include firefox
 #  include freememory
-#  include googledrive
-#  include googleappenginelauncher
 #  include intercall
-#  include jewelrybox # not used
 #  include join.me
 #  include littleipsum
 #  include hamachi
@@ -259,31 +224,16 @@ class people::cdenneen::applications {
 
 
 #include appcleaner
-#include onepassword
-#include dropbox
 #include chocolat
 #include crashplan
-#include virtualbox
-#include colloquy
-#include caffeine
 #include alfred2
 #include xquartz
 #include vmware_fusion
 #include textmate::textmate2::release
 
-#package{ 'zsh': }
-#package{ 'htop-osx': }
-#package{ 'tree': }
-#include vagrant
-
 #vagrant::plugin { 'vagrant-vmware-fusion':
 #  license => "/Users/${::luser}/Dropbox/Software/Vagrant/fusion-license.lic",
 #}
-
-#package { 'Github for Mac':
-#   source   => 'https://github-central.s3.amazonaws.com/mac%2FGitHub%20for%20Mac%20111.zip',
-#    provider => compressed_app
-#  }
 
 #  package { 'CoRD':
 #    source   => 'http://iweb.dl.sourceforge.net/project/cord/cord/0.5.7/CoRD_0.5.7.zip',
